@@ -1,0 +1,18 @@
+#awsandgit account
+Host github.com
+        HostName github.com
+        User git
+        IdentityFile ~/.ssh/github
+
+
+#rohitknows account
+Host github.com-rohitknows
+        HostName github.com
+        User git
+        IdentityFile ~/.ssh/githubknows
+
+#rohitsingh account
+Host github.com-rohitsingh496
+        HostName github.com
+        User git
+        IdentityFile ~/.ssh/githubsingh

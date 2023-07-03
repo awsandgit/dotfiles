@@ -1,9 +1,11 @@
-#  ____  ____  
-# |  _ \/ ___|   
-# | |_) \___ \   Author: Rohit   
-# |  _ < ___) |  Script: ~/.vimrc
-# |_| \_\____/   License: MIT License 
-#
+"  ____  ____  
+" |  _ \/ ___|   
+" | |_) \___ \   Author: Rohit   
+" |  _ < ___) |  Script: ~/.vimrc
+" |_| \_\____/   License: MIT License 
+"
+"addded stuff
+"
 
 let mapleader=" "
 set nocompatible              " required
@@ -113,5 +115,3 @@ au BufRead,BufNewFile *.js, *.html, *.css, *.yml, *.yaml
     \ set shiftwidth=2
 
 "au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
-
-
