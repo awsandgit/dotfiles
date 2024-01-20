@@ -4,8 +4,9 @@
 " |  _ < ___) |  Script: ~/.vimrc
 " |_| \_\____/   License: MIT License 
 "
-"addded stuff
 "
+source /usr/share/doc/fzf/examples/fzf.vim
+set backspace=indent,eol,start 
 
 let mapleader=" "
 set nocompatible              " required

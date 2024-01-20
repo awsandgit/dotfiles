@@ -12,6 +12,9 @@
 source $HOME/.kube/autocompl.sh
 source /usr/share/autojump/autojump.bash
 export PATH=$PATH:$HOME/.config/emacs/bin
+export PATH=$PATH:$HOME/.local/bin
+export GITLABTOKEN=glptt-a99d2096e6da21ed014221fcf22488500e947894
+source /usr/share/doc/fzf/examples/key-bindings.bash
 
 # alias ciri="~/.local/bin/sgpt"
 alias sshphone="ssh -p '$phone_port' '$phone_ip' "
@@ -35,6 +38,7 @@ alias .4='cd ../../../..'
 alias open='xdg-open'
 alias notes='cd ~/development/notes/'
 alias edrc='vim ~/.bashrc'
+alias glg='git log --oneline --graph'
 # alias duo='brave-browser --app="https://duolingo.com"'
 #alias emacs="emacsclient -c -a 'vim'"
 
@@ -190,5 +194,6 @@ fi
 
 
 # Load Angular CLI autocompletion.
-source <(ng completion script)
+#source <(ng completion script)
 export PATH=$HOME/bin:$PATH
+export PATH="$PATH:/opt/mssql-tools18/bin"

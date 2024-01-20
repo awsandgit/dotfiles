@@ -16,3 +16,14 @@ Host github.com-rohitsingh496
         HostName github.com
         User git
         IdentityFile ~/.ssh/githubsingh
+
+#ani codecommit account
+Host git-codecommit.*.amazonaws.com
+User APKAWCVAQL2X7SYBJ4GC
+IdentityFile ~/.ssh/anicode
+
+#rohit gitlab ai account
+Host gitlab.com
+User git
+IdentityFile ~/.ssh/gitlabai
+
