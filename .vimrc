@@ -57,8 +57,8 @@ set hlsearch
 set incsearch
 set showcmd
 
-"set clipboard=unnamedplus
-"vnoremap <C-c> "+y
+set clipboard=unnamedplus
+vnoremap <C-c> "+y
 "map <C-p> "+P
 
 "For clipboard
