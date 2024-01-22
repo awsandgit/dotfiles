@@ -6,13 +6,13 @@
 
 ;; Some functionality uses this to identify you, e.g. GPG configuration, email
 ;; clients, file templates and snippets. It is optional.
-(setq user-full-name "John Doe"
-      user-mail-address "john@doe.com")
+(setq user-full-name "Rohit Singh"
+      user-mail-address "aws4em@gmail.com")
 
 ;; Doom exposes five (optional) variables for controlling fonts in Doom:
 ;;
-(setq doom-font (font-spec :family "FiraCode Nerd Font" :size 18 :weight 'normal)
-      doom-variable-pitch-font (font-spec :family "JetBrainsMono Nerd Font" :size 18 :weight 'normal))
+(setq doom-font (font-spec :family "FiraCode Nerd Font" :size 20 :weight 'normal)
+      doom-variable-pitch-font (font-spec :family "JetBrainsMono Nerd Font" :size 22 :weight 'normal))
 ;; - `doom-font' -- the primary font to use
 ;; - `doom-variable-pitch-font' -- a non-monospace font (where applicable)
 ;; - `doom-big-font' -- used for `doom-big-font-mode'; use this for
@@ -38,12 +38,14 @@
 
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
-(setq display-line-numbers-type t)
+(setq display-line-numbers-type 'relative)
 
 ;; If you use `org' and don't want your org files in the default location below,
 ;; change `org-directory'. It must be set before org loads!
 (setq org-directory "~/development/notes")
-
+(setq org-roam-graph-executable "dot")
+(setq org-roam-directory "~/development/roam" )
+(setq org-roam-completion-everywhere 't)
 
 ;; Whenever you reconfigure a package, make sure to wrap your config in an
 ;; `after!' block, otherwise Doom's defaults may override your settings. E.g.
