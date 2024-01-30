@@ -46,7 +46,14 @@
 (setq org-roam-graph-executable "dot")
 (setq org-roam-directory "~/development/roam" )
 (setq org-roam-completion-everywhere 't)
-
+(doom/set-frame-opacity 93)
+(custom-theme-set-faces!
+  'doom-dracula
+  '(org-level-4 :inherit outline-4 :height 1.1)
+  '(org-level-3 :inherit outline-3 :height 1.1)
+  '(org-level-2 :inherit outline-2 :height 1.25)
+  '(org-level-1 :inherit outline-1 :height 1.50)
+  '(org-document-title :height 1.75 :underline nil))
 ;; Whenever you reconfigure a package, make sure to wrap your config in an
 ;; `after!' block, otherwise Doom's defaults may override your settings. E.g.
 ;;

@@ -189,7 +189,7 @@ if ! shopt -oq posix; then
 fi
 
 #starship prompt added by me
-#eval "$(starship init bash)"
+eval "$(starship init bash)"
 
 
 
