@@ -46,7 +46,7 @@
 (setq org-roam-graph-executable "dot")
 (setq org-roam-directory "~/development/roam" )
 (setq org-roam-completion-everywhere 't)
-(doom/set-frame-opacity 93)
+(doom/set-frame-opacity 95)
 (custom-theme-set-faces!
   'doom-dracula
   '(org-level-4 :inherit outline-4 :height 1.1)
