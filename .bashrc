@@ -13,7 +13,6 @@ source $HOME/.kube/autocompl.sh
 source /usr/share/autojump/autojump.bash
 export PATH=$PATH:$HOME/.config/emacs/bin
 export PATH=$PATH:$HOME/.local/bin
-export GITLABTOKEN=glptt-a99d2096e6da21ed014221fcf22488500e947894
 source /usr/share/doc/fzf/examples/key-bindings.bash
 
 # alias ciri="~/.local/bin/sgpt"
