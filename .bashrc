@@ -37,6 +37,7 @@ alias .4='cd ../../../..'
 alias open='xdg-open'
 alias notes='cd ~/development/notes/'
 alias edrc='vim ~/.bashrc'
+alias alpha='cat ~/Documents/creds/alpha/rohit-devops_credentials.csv'
 alias glg='git log --oneline --graph'
 # alias duo='brave-browser --app="https://duolingo.com"'
 #alias emacs="emacsclient -c -a 'vim'"

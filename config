@@ -27,3 +27,8 @@ Host gitlab.com
 User git
 IdentityFile ~/.ssh/gitlabai
 
+
+#rohit gitlab ai account
+Host gitlab.appinvent.in
+    User git
+    IdentityFile ~/.ssh/aigitlab
