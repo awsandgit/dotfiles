@@ -45,6 +45,7 @@
 (setq org-directory "~/development/notes")
 (setq org-roam-graph-executable "dot")
 (setq org-roam-directory "~/development/roam" )
+(setq org-log-done 'time)
 (setq org-roam-completion-everywhere 't)
 (doom/set-frame-opacity 95)
 (custom-theme-set-faces!
@@ -77,6 +78,10 @@
 ;;   `require' or `use-package'.
 ;; - `map!' for binding new keys
 ;;
+(use-package super-save
+  :ensure t
+  :config
+  (super-save-mode +1))
 ;; To get information about any of these functions/macros, move the cursor over
 ;; the highlighted symbol at press 'K' (non-evil users must press 'C-c c k').
 ;; This will open documentation for it, including demos of how they are used.
