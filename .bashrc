@@ -39,6 +39,8 @@ alias notes='cd ~/development/notes/'
 alias edrc='vim ~/.bashrc'
 alias alpha='cat ~/Documents/creds/alpha/rohit-devops_credentials.csv'
 alias glg='git log --oneline --graph'
+alias gitdog='git log --all --decorate --oneline --graph'
+alias k='microk8s kubectl'
 # alias duo='brave-browser --app="https://duolingo.com"'
 #alias emacs="emacsclient -c -a 'vim'"
 
