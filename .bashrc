@@ -41,6 +41,10 @@ alias alpha='cat ~/Documents/creds/alpha/rohit-devops_credentials.csv'
 alias glg='git log --oneline --graph'
 alias gitdog='git log --all --decorate --oneline --graph'
 alias k='microk8s kubectl'
+alias vlist='openvpn3 sessions-list'
+alias vcred='cat ~/Documents/creds/sensor/vpn/dev.creds'
+alias vcon='openvpn3 session-start --config ~/Documents/creds/sensor/vpn/devlatest.ovpn'
+alias vdis='openvpn3 session-manage --disconnect --config ~/Documents/creds/sensor/vpn/devlatest.ovpn'
 # alias duo='brave-browser --app="https://duolingo.com"'
 #alias emacs="emacsclient -c -a 'vim'"
 
