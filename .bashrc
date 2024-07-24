@@ -37,7 +37,6 @@ alias .4='cd ../../../..'
 alias open='xdg-open'
 alias notes='cd ~/development/notes/'
 alias edrc='vim ~/.bashrc'
-alias alpha='cat ~/Documents/creds/alpha/rohit-devops_credentials.csv'
 alias glg='git log --oneline --graph'
 alias gitdog='git log --all --decorate --oneline --graph'
 alias k='microk8s kubectl'
@@ -70,6 +69,11 @@ sendFile(){
 #setbg(){
 #    sxiv /media/shawn/backup/Pictures/anime/
 #}
+
+
+myalpha(){
+    awk 'NR==2{print $3}' "$HOME/Documents/creds/alpha/rohit-devops_credentials.csv" | xclip -sel c
+}
 
 myip(){
    ipstore=`ifconfig | grep "inet " | awk 'NR>1{print $2}'`
