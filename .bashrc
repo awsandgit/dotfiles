@@ -13,7 +13,7 @@ source $HOME/.kube/autocompl.sh
 source /usr/share/autojump/autojump.bash
 export PATH=$PATH:$HOME/.config/emacs/bin
 export PATH=$PATH:$HOME/.local/bin
-source /usr/share/doc/fzf/examples/key-bindings.bash
+#source /usr/share/doc/fzf/examples/key-bindings.bash
 
 # alias ciri="~/.local/bin/sgpt"
 alias sshphone="ssh -p '$phone_port' '$phone_ip' "
@@ -207,3 +207,5 @@ eval "$(starship init bash)"
 #source <(ng completion script)
 export PATH=$HOME/bin:$PATH
 export PATH="$PATH:/opt/mssql-tools18/bin"
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash

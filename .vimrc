@@ -5,7 +5,7 @@
 " |_| \_\____/   License: MIT License 
 "
 "
-source /usr/share/doc/fzf/examples/fzf.vim
+"source /usr/share/doc/fzf/examples/fzf.vim
 set backspace=indent,eol,start 
 
 let mapleader=" "
