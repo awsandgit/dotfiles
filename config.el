@@ -11,8 +11,8 @@
 
 ;; Doom exposes five (optional) variables for controlling fonts in Doom:
 ;;
-(setq doom-font (font-spec :family "FiraCode Nerd Font" :size 20 :weight 'normal)
-      doom-variable-pitch-font (font-spec :family "JetBrainsMono Nerd Font" :size 22 :weight 'normal))
+(setq doom-font (font-spec :family "FiraCode Nerd Font" :size 30 :weight 'normal)
+      doom-variable-pitch-font (font-spec :family "JetBrainsMono Nerd Font" :size 32 :weight 'normal))
 ;; - `doom-font' -- the primary font to use
 ;; - `doom-variable-pitch-font' -- a non-monospace font (where applicable)
 ;; - `doom-big-font' -- used for `doom-big-font-mode'; use this for
