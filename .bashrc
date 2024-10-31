@@ -11,8 +11,10 @@
 
 source $HOME/.kube/autocompl.sh
 source /usr/share/autojump/autojump.bash
+source "$HOME/.cargo/env"
 export PATH=$PATH:$HOME/.config/emacs/bin
 export PATH=$PATH:$HOME/.local/bin
+export PATH="$PATH:/opt/nvim-linux64/bin"
 #source /usr/share/doc/fzf/examples/key-bindings.bash
 
 # alias ciri="~/.local/bin/sgpt"
@@ -209,3 +211,4 @@ export PATH=$HOME/bin:$PATH
 export PATH="$PATH:/opt/mssql-tools18/bin"
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+. "$HOME/.cargo/env"

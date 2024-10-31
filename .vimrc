@@ -51,8 +51,10 @@ Plugin 'jnurmine/Zenburn'
 Plugin 'ap/vim-css-color'
 Plugin 'JamshedVesuna/vim-markdown-preview'
 Plugin 'dracula/vim', { 'name': 'dracula' }
+Plugin 'christoomey/vim-tmux-navigator'
 
 "-------------done by me-------------------
+let g:tmux_navigator_no_mappings = 1
 set hlsearch
 set incsearch
 set showcmd
@@ -87,10 +89,19 @@ set splitbelow splitright
 
 "REMAPS
 
-map <C-h> <C-w>h
-map <C-j> <C-w>j
-map <C-k> <C-w>k
-map <C-l> <C-w>l
+"tmux
+
+nnoremap <silent> <C-h> :<C-U>TmuxNavigateLeft<cr>
+nnoremap <silent> <C-j> :<C-U>TmuxNavigateDown<cr>
+nnoremap <silent> <C-k> :<C-U>TmuxNavigateUp<cr>
+nnoremap <silent> <C-l> :<C-U>TmuxNavigateRight<cr>
+nnoremap <silent> <C-u> :<C-U>TmuxNavigatePrevious<cr>
+
+"map <C-h> <C-w>h
+"map <C-j> <C-w>j
+"map <C-k> <C-w>k
+"map <C-l> <C-w>l
+
 
 "vertical movements
 nnoremap <C-u> <C-u>zz
