@@ -34,8 +34,8 @@
 ;; There are two ways to load a theme. Both assume the theme is installed and
 ;; available. You can either set `doom-theme' or manually load a theme with the
 ;; `load-theme' function. This is the default:
-;; (setq doom-theme 'doom-dracula)
-(setq doom-theme 'catppuccin)
+(setq doom-theme 'doom-dracula)
+;; (setq doom-theme 'catppuccin)
 ;; (setq catppuccin-flavor 'frappe) ;; or 'latte, 'macchiato, or 'mocha
 ;; (catppuccin-reload)
 
@@ -52,8 +52,8 @@
 (setq org-roam-completion-everywhere 't)
 (doom/set-frame-opacity 95)
 (custom-theme-set-faces!
-  ;; 'doom-dracula
-  'catppuccin
+  'doom-dracula
+  ;; 'catppuccin
   '(org-level-4 :inherit outline-4 :height 1.1)
   '(org-level-3 :inherit outline-3 :height 1.1)
   '(org-level-2 :inherit outline-2 :height 1.25)
