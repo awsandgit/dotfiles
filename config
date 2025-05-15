@@ -1,35 +1,56 @@
+Host *
+    IdentitiesOnly yes
+    IdentityAgent none
+
+Host 52.66.191.199
+    User ubuntu
+    IdentityFile ~/.ssh/beta-dev-key
+    IdentitiesOnly yes
+    IdentityAgent none
+
+
+Host 3.109.152.220
+    User ubuntu
+    IdentityFile ~/work/alpha-modules-copy/alpha-script-dev-key
+    IdentitiesOnly yes
+    IdentityAgent none
 #awsandgit account
 Host gitlab.appinvent.in
     User git
     IdentityFile ~/.ssh/aigitlab
 
 Host github.com
-        HostName github.com
-        User git
-        IdentityFile ~/.ssh/github
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/github
+
+#rohitsingh-oss
+Host github.com-rohitsingh-oss
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/github-rohitsingh-oss
 
 
 #rohitknows account
 Host github.com-rohitknows
-        HostName github.com
-        User git
-        IdentityFile ~/.ssh/githubknows
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/githubknows
 
 #rohitsingh account
 Host github.com-rohitsingh496
-        HostName github.com
-        User git
-        IdentityFile ~/.ssh/githubsingh
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/githubsingh
 
 #ani codecommit account
 Host git-codecommit.*.amazonaws.com
-User APKAWCVAQL2X7SYBJ4GC
-IdentityFile ~/.ssh/anicode
+    User APKAWCVAQL2X7SYBJ4GC
+    IdentityFile ~/.ssh/anicode
 
 #rohit gitlab ai account
 Host gitlab.com
-User git
-IdentityFile ~/.ssh/gitlabai
+    User git
+    IdentityFile ~/.ssh/gitlabai
 
 
-#rohit gitlab ai account

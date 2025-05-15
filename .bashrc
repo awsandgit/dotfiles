@@ -9,17 +9,23 @@
 # phone_ip='192.168.29.27'
 # phone_port='8022'
 
+export PATH=$HOME/bin:$PATH
+export EDITOR=nvim
 source $HOME/.kube/autocompl.sh
 source /usr/share/autojump/autojump.bash
 source "$HOME/.cargo/env"
 export PATH=$PATH:$HOME/.config/emacs/bin
 export PATH=$PATH:$HOME/.local/bin
-export PATH="$PATH:/opt/nvim-linux64/bin"
-#source /usr/share/doc/fzf/examples/key-bindings.bash
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+export PATH=$PATH:/opt/sonar-scanner/bin
+# export PATH=$PATH:/opt/sonarqube/bin/linux-x86-64
+export PATH=$PATH:/opt/android-studio/bin
+export PATH=$PATH:$HOME/.tmuxifier/bin
+source /usr/share/doc/fzf/examples/key-bindings.bash
 
 # alias ciri="~/.local/bin/sgpt"
-alias sshphone="ssh -p '$phone_port' '$phone_ip' "
-alias sftpphone="sftp -P '$phone_port' '$phone_ip' " 
+# alias sshphone="ssh -p '$phone_port' '$phone_ip' "
+# alias sftpphone="sftp -P '$phone_port' '$phone_ip' " 
 # ---**---**---**------**---**---**------**---**---**--- 
 
 # shuf -n 2 ~/bin/words.txt | pv -qL 50 | lolcat
@@ -43,10 +49,10 @@ alias edrc='vim ~/.bashrc'
 alias glg='git log --oneline --graph'
 alias gitdog='git log --all --decorate --oneline --graph'
 alias k='microk8s kubectl'
-alias vlist='openvpn3 sessions-list'
-alias vcred='cat ~/Documents/creds/sensor/vpn/dev.creds'
-alias vcon='openvpn3 session-start --config ~/Documents/creds/sensor/vpn/devlatest.ovpn'
-alias vdis='openvpn3 session-manage --disconnect --config ~/Documents/creds/sensor/vpn/devlatest.ovpn'
+#alias vlist='openvpn3 sessions-list'
+#alias vcred='cat ~/Documents/creds/sensor/vpn/dev.creds'
+#alias vcon='openvpn3 session-start --config ~/Documents/creds/sensor/vpn/devlatest.ovpn'
+#alias vdis='openvpn3 session-manage --disconnect --config ~/Documents/creds/sensor/vpn/devlatest.ovpn'
 # alias duo='brave-browser --app="https://duolingo.com"'
 #alias emacs="emacsclient -c -a 'vim'"
 
@@ -208,8 +214,4 @@ eval "$(starship init bash)"
 
 # Load Angular CLI autocompletion.
 #source <(ng completion script)
-export PATH=$HOME/bin:$PATH
-export PATH="$PATH:/opt/mssql-tools18/bin"
 
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
-. "$HOME/.cargo/env"

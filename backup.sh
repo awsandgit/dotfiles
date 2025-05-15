@@ -2,7 +2,9 @@
 
 set -x
 
-/usr/bin/rsync -r "$HOME"/.bashrc "$HOME"/.vimrc "$HOME"/.ssh/config "$HOME"/.config/doom/ "$HOME"/development/dotfiles/
+/usr/bin/rsync -r "$HOME"/.bashrc "$HOME"/.vimrc "$HOME"/.ssh/config "$HOME"/.config/doom \
+  "$HOME"/.tmuxifier/layouts/code.session.sh "$HOME"/.tmux.conf \
+  "$HOME"/.config/nvim "$HOME"/development/dotfiles/
 
 cd "$HOME"/development/dotfiles/ || exit
 
